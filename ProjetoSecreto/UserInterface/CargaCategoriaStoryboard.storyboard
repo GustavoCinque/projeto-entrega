@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Carga Categoria Storyboard Controller-->
+        <scene sceneID="6Tf-80-ghJ">
+            <objects>
+                <viewController storyboardIdentifier="cargaCategoriaID" modalPresentationStyle="overCurrentContext" id="fJJ-gU-PyP" customClass="CargaCategoriaStoryboardController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I83-RY-P7m"/>
+                        <viewControllerLayoutGuide type="bottom" id="n9x-GX-GfH"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.40000000000000002" contentMode="scaleToFill" id="Kfp-Cg-H8n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="T6d-oa-Kny">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T6d-oa-Kny" firstAttribute="centerX" secondItem="Kfp-Cg-H8n" secondAttribute="centerX" id="D54-gE-W4z"/>
+                            <constraint firstItem="T6d-oa-Kny" firstAttribute="centerY" secondItem="Kfp-Cg-H8n" secondAttribute="centerY" id="cIK-N0-gO6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spinner" destination="T6d-oa-Kny" id="UoM-Vk-IBO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIH-lr-TMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="20"/>
+        </scene>
+    </scenes>
+</document>
